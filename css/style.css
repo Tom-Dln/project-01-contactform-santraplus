@@ -9,10 +9,12 @@
     Police : #666
 -------------------------------------------------------------- */
 
-@import ;
-
 body {
     margin: 0;
+    background-color: #7549A4;
+    background-image: url(../img/bg_site.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 html {
@@ -30,11 +32,6 @@ header {
     border-bottom: 3px #C0BDA4 solid;
 }
 
-header img {
-    display: inline-block;
-
-}
-
 header h1 {
     display: inline-block;
     vertical-align: top;
@@ -44,8 +41,8 @@ header h1 {
     font-family: Arial;
     font-size: 5.5rem;
     font-style: italic;
-    color: #0092B6;
     text-align: right;
+    color: #0092B6;
 }
 
 /* --------------------------------------------------------------
@@ -53,13 +50,27 @@ header h1 {
 -------------------------------------------------------------- */
 
 main {
-    background-color: #7549A4;
-    background-image: url(../img/bg_site.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 200vh;
+    height: 55vh;
+}
+
+article {
+    margin: 100px 150px 100px 150px;
+    background-color: white;
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.2)
 }
 
 /* --------------------------------------------------------------
     FOOTER @F
 -------------------------------------------------------------- */
+
+footer p {
+    margin: 0;
+    padding: 60px 0 60px 0;
+    background-image: url(../img/bg_footer.png);
+    color: #FFF;
+    font-size: 2rem;
+    font-family: arial;
+    text-align: center;
+    background-size: cover;
+    line-height: 4rem;
+}
