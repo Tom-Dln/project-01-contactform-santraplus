@@ -56,7 +56,28 @@ main {
 article {
     margin: 100px 150px 100px 150px;
     background-color: white;
-    box-shadow: 0 0 15px 0 rgba(0,0,0,0.2)
+    box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
+    height: 50vh;
+}
+
+/* Tests */
+
+label,
+p {
+    font-size: 3rem;
+    font-family: Arial;
+}
+
+form p span {
+    display: none;
+}
+
+form input:nth-child(1):checked ~ span {
+    display: contents ;
+}
+
+form input:nth-child(1):checked + label{
+    color: coral;
 }
 
 /* --------------------------------------------------------------
