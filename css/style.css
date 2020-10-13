@@ -4,22 +4,49 @@
     Bleu Std : #0092B6
     Vert Std : #AEC000
 
+    Debug : #7549A4
+
     Police : #666
 -------------------------------------------------------------- */
+
+@import ;
+
+body {
+    margin: 0;
+}
 
 /* --------------------------------------------------------------
     HEADER
 -------------------------------------------------------------- */
 
+header {
+    padding: 20px;
+    background-color: #ebebeb;
+    height: 55px;
+}
 
+header img {
+    display: inline-block;
+}
 
+h1 {
+    font-family: "Arial";
+    color: #0092B6;
+    display: inline;
+}
 
 
 /* --------------------------------------------------------------
-    BODY
+    MAIN
 -------------------------------------------------------------- */
 
-
+main {
+    background-color: #7549A4;
+    background-image: url(../img/bg_site.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200vh;
+}
 
 
 
