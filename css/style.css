@@ -15,29 +15,41 @@ body {
     margin: 0;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 /* --------------------------------------------------------------
-    HEADER
+    HEADER @H
 -------------------------------------------------------------- */
 
 header {
-    padding: 20px;
-    background-color: #ebebeb;
+    padding: 35px 50px 35px 50px;
     height: 55px;
+    background-color: #fcfcfc;
+    border-bottom: 3px #C0BDA4 solid;
 }
 
 header img {
     display: inline-block;
+
 }
 
-h1 {
-    font-family: "Arial";
+header h1 {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    width: 76%;
+    height: 55px;
+    font-family: Arial;
+    font-size: 5.5rem;
+    font-style: italic;
     color: #0092B6;
-    display: inline;
+    text-align: right;
 }
-
 
 /* --------------------------------------------------------------
-    MAIN
+    MAIN @M
 -------------------------------------------------------------- */
 
 main {
@@ -48,8 +60,6 @@ main {
     height: 200vh;
 }
 
-
-
 /* --------------------------------------------------------------
-    FOOTER
+    FOOTER @F
 -------------------------------------------------------------- */
