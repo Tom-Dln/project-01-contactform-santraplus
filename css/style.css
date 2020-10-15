@@ -1,13 +1,18 @@
 /* --------------------------------------------------------------
-    Charte Graphique - Couleurs :
 
-    Bleu Std : #0092B6
-    Vert Std : #AEC000
+    Projet 1 - Santraplus
 
-    Debug : #7549A4
+    Tom DELAUNAY
 
-    Police : #666
 -------------------------------------------------------------- */
+
+/* --------------------------------------------------------------
+    GLOBAL @@@G
+-------------------------------------------------------------- */
+
+html {
+    font-size: 62.5%;
+}
 
 body {
     margin: 0;
@@ -17,12 +22,8 @@ body {
     background-repeat: no-repeat;
 }
 
-html {
-    font-size: 62.5%;
-}
-
 /* --------------------------------------------------------------
-    HEADER @H
+    HEADER @@@H
 -------------------------------------------------------------- */
 
 header {
@@ -38,7 +39,7 @@ header h1 {
     margin: 0;
     width: 76%;
     height: 55px;
-    font-family: Arial;
+    font-family: Georgia, Serif;
     font-size: 5.5rem;
     font-style: italic;
     text-align: right;
@@ -46,21 +47,96 @@ header h1 {
 }
 
 /* --------------------------------------------------------------
-    MAIN @M
+    MAIN @@@M
 -------------------------------------------------------------- */
 
 main {
-    height: 55vh;
+    margin: 100px 150px 100px 150px;
 }
 
 article {
-    margin: 100px 150px 100px 150px;
+
     background-color: white;
     box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
-    height: 50vh;
+    border-radius: 10px;
+    padding: 30px;
+    font-family: Georgia, Serif;
 }
 
-/* Tests */
+/* --------------------------------------------------------------
+    FOOTER @@@F
+-------------------------------------------------------------- */
+
+footer p {
+    margin: 0;
+    padding: 30px 0;
+    background-image: url(../img/bg_footer.png);
+    color: #FFF;
+    font-size: 2rem;
+    font-family: arial;
+    text-align: center;
+    background-size: cover;
+    line-height: 4rem;
+}
+
+/* --------------------------------------------------------------
+    MAIN-PAGE @@@M-P
+-------------------------------------------------------------- */
+
+#main-page {
+    overflow: hidden;
+}
+
+#main-page h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#main-page p {
+    font-size: 1.5rem;
+}
+
+#main-page .section-1 {
+    color: #666;
+}
+
+#main-page a {
+    font-size: 2rem;
+    padding: 10px;
+    background-color: #AEC000;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 250px;
+    display: block;
+    margin: auto;
+    margin-top: 35px;
+}
+
+#main-page a:hover {
+    background-color: #BECC3D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------
+    TESTS @@@T
+-------------------------------------------------------------- */
+
+/*
 
 label,
 p {
@@ -80,18 +156,26 @@ form input:nth-child(1):checked + label{
     color: coral;
 }
 
-/* --------------------------------------------------------------
-    FOOTER @F
--------------------------------------------------------------- */
 
-footer p {
-    margin: 0;
-    padding: 60px 0 60px 0;
-    background-image: url(../img/bg_footer.png);
-    color: #FFF;
-    font-size: 2rem;
-    font-family: arial;
-    text-align: center;
-    background-size: cover;
-    line-height: 4rem;
-}
+
+
+                <p>Présentation de la page</p>
+                <form method="POST" action="">
+                    <p>
+                        <input type="radio" id="mat" name="reprise" value="mat">
+                        <label for="mat">Reprise Maternité</label>
+                        <span><br>Mon texte supplémentaire avec les infos à remplir</span>
+                    </p>
+                    <p>
+                        <input type="radio" id="mal" name="reprise" value="mal">
+                        <label for="mal">Reprise Maladie</label>
+                        <span><br>Mon texte supplémentaire avec les infos à remplir</span>
+                    </p>
+                    <p>
+                        <input type="radio" id="abs" name="reprise" value="abs">
+                        <label for="abs">Reprise Absence</label>
+                        <span><br>Mon texte supplémentaire avec les infos à remplir</span>
+                    </p>
+
+                </form>
+                
