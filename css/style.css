@@ -18,8 +18,10 @@ body {
     margin: 0;
     background-color: #7549A4;
     background-image: url(../img/bg_site.jpg);
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    color: #666;
 }
 
 /* --------------------------------------------------------------
@@ -51,7 +53,7 @@ header h1 {
 -------------------------------------------------------------- */
 
 main {
-    margin: 100px 150px 100px 150px;
+    margin: 100px 150px;
 }
 
 article {
@@ -61,6 +63,55 @@ article {
     border-radius: 10px;
     padding: 30px;
     font-family: Georgia, Serif;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+.green-button {
+    font-size: 2rem;
+    color: #FFF;
+    background-color: #AEC000;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+}
+
+.green-button:hover {
+    background-color: #BECC3D;
+}
+
+.orange-button {
+    font-size: 2rem;
+    color: #FFF;
+    background-color: #FFAC4B;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+}
+
+.orange-button:hover {
+    background-color: #FFBD6F;
+}
+
+.center-button {
+    margin: auto;
+    margin-top: 35px;
+}
+
+.left-button {
+    margin: 0;
+    margin-top: 15px;
+    display: inline-block;
 }
 
 /* --------------------------------------------------------------
@@ -87,35 +138,101 @@ footer p {
     overflow: hidden;
 }
 
-#main-page h2 {
-    font-size: 2.5rem;
-    margin-top: 0;
-    margin-bottom: 30px;
+#main-page article a {
+    width: 250px;
 }
 
-#main-page p {
-    font-size: 1.5rem;
+/* --------------------------------------------------------------
+    LOGIN-PAGE @@@L-P
+-------------------------------------------------------------- */
+
+#login-page p {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
 }
 
-#main-page .section-1 {
+#login-page input {
+    height: 20px;
+}
+
+/* --------------------------------------------------------------
+    ADMINISTRATION-PAGE @@@A-P
+-------------------------------------------------------------- */
+
+#administration-page li,
+#administration-page li a {
+    font-size: 1.8rem;
     color: #666;
 }
 
-#main-page a {
-    font-size: 2rem;
-    padding: 10px;
-    background-color: #AEC000;
-    color: #FFF;
+#administration-page li a:hover {
     text-decoration: none;
-    border-radius: 5px;
-    width: 250px;
+    color: #000;
+}
+
+/* --------------------------------------------------------------
+    REGISTER-EMPLOYEE-PAGES @@@R-E-P
+-------------------------------------------------------------- */
+
+.input-1 {
+    color: #0092B6;
+    font-weight: bolder;
+    text-align: center;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #0092B6;
+    font-size: inherit;
+}
+
+.input-1:hover {
+    border-bottom: 2px solid #00ABC6;
+}
+
+.input-1:focus-visible {
+    border: 2px solid #transparent;
+}
+
+.input-date {
+    width: 50px;
+}
+
+
+#register-employee-1-page form p + p,
+#register-employee-2-page form p:first-child,
+#register-employee-2-page form p:nth-child(2) {
+    float: left;
+    width: 50%;
+}
+
+#register-employee-1-page ul,
+#register-employee-2-page ul,
+#new-appointment-page ul {
+    margin: 0 460px;
+}
+
+#register-employee-1-page ul li,
+#register-employee-2-page ul li,
+#new-appointment-page ul li {
+    display: inline-block;
+}
+
+
+#register-employee-2-page #same-job-yes,
+#register-employee-2-page #same-job-no {
+    margin-left: 30px;
+}
+
+/* --------------------------------------------------------------
+    NEW-APPOINTMENT-PAGE @@@N-A-P
+-------------------------------------------------------------- */
+
+#new-appointment-page div {
+    display: none;
+    margin-left: 20px;
+}
+
+#new-appointment-page form input:nth-child(1):checked + div {
     display: block;
-    margin: auto;
-    margin-top: 35px;
-}
-
-#main-page a:hover {
-    background-color: #BECC3D;
+    margin-left: 20px;
 }
 
 
@@ -123,13 +240,9 @@ footer p {
 
 
 
-
-
-
-
-
-
-
+#clearfix {
+    clear: both;
+}
 
 
 /* --------------------------------------------------------------

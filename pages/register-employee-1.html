@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr" id="register-employee-1-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santraplus - Enregistrer Employé</title>
+    <link href="../css/style.css"" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../img/logo-santraplus.png" alt="Logo de Santraplus" width="278" height="55"></a>
+        <h1>Portail Administratif</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Enregistrer un Salarié</h2>
+            <form action="" method="POST">
+                <p>
+                    Civilité : 
+                    <input id="man" name="gender" value="man" type="radio">
+                    <label for="man">Monsieur</label>
+                    <input id="woman" name="gender" value="woman" type="radio">
+                    <label for="woman">Madame</label>
+                </p>
+                <p>
+                    <label for="born-last-name">Nom de naissance : </label>
+                    <input class="input-1" id="born-last-name" name="born-last-name" type="text"><br>
+                    <label for="actual-last-name">Nom marital : </label>                        
+                    <input class="input-1" id="actual-last-name" name="actual-last-name" type="text">
+                </p>
+                <p>
+                    <label for="first-name">Prénom : </label>
+                    <input class="input-1" id="first-name" name="first-name" type="text"><br>
+                    <label for="date-birth">Date de Naissance : </label>                        
+                    <input class="input-1" id="date-birth" name="date-birth" type="date">
+                </p>
+            </form>
+            <div id="clearfix"></div>
+            <ul>
+                <li><a class="orange-button left-button" href="administration.html">Annuler</a></li>
+                <li><a class="green-button left-button" href="register-employee-2.html">Suivant</a></li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <p>Site conçu et réalisé par Tom Delaunay<br>Project 1 - Contact Form Santraplus</p>
+    </footer>
+</body>
+</html>

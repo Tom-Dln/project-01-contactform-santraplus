@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr" id="new-appointment-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santraplus - Nouveau Rendez-vous</title>
+    <link href="../css/style.css"" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../img/logo-santraplus.png" alt="Logo de Santraplus" width="278" height="55"></a>
+        <h1>Portail Administratif</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Demander un Rendez-vous</h2>
+            <form action="" method="POST">
+                <p>
+                    <input id="sick" name="reason-appoint" value="sick" type="radio">
+                    <label for="sick">Reprise après une absence pour cause de maladie professionnelle</label>
+                    <div>
+                        <br><br>
+                        <label for="back-date">Date de la reprise : </label>
+                        <input class="input-1" id="back-date" name="back-date" type="date">
+                        <br>
+                        <label for="stop-duration">Durée de l'arrêt : </label>
+                        <input class="input-1 input-date" id="stop-duration" name="stop-duration" type="number">
+                        <label for="stop-duration">jours</label>
+                    </div>
+                </p>
+                <p>
+                    <input id="maternity" name="reason-appoint" value="maternity" type="radio">
+                    <label for="maternity">Reprise après un congé maternité</label>
+                    <div>
+                        <br><br>
+                        <label for="back-date">Date de la reprise : </label>
+                        <input class="input-1" id="back-date" name="back-date" type="date">
+                        <br>
+                        <label for="stop-duration">Durée de l'arrêt : </label>
+                        <input class="input-1 input-date" id="stop-duration" name="stop-duration" type="number">
+                        <label for="stop-duration">jours</label>
+                    </div>
+                </p>
+                <p>
+                    <input id="absence" name="reason-appoint" value="absence" type="radio">
+                    <label for="absence">Reprise après une absence de + 30 jours</label>
+                    <div>
+                        <br><br>
+                        <input id="accident" name="reason-sick" value="accident" type="radio">
+                        <label for="accident">Accident de travail</label>
+                        <input id="stop" name="reason-sick" value="stop" type="radio">
+                        <label for="stop">Arrêt maladie</label>
+                        <br><br>
+                        <label for="back-date">Date de la reprise : </label>
+                        <input class="input-1" id="back-date" name="back-date" type="date">
+                        <br>
+                        <label for="stop-duration">Durée de l'arrêt : </label>
+                        <input class="input-1 input-date" id="stop-duration" name="stop-duration" type="number">
+                        <label for="stop-duration">jours</label>
+                    </div>
+                </p>
+                <p>
+                    <input id="employer" name="reason-appoint" value="employer" type="radio">
+                    <label for="employer">Examen à la demande de l'employeur</label>
+                </p>
+            </form>
+            <ul>
+                <li><a class="orange-button left-button" href="administration.html">Annuler</a></li>
+                <li><a class="green-button left-button" href="register-employee-3.html">Suivant</a></li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <p>Site conçu et réalisé par Tom Delaunay<br>Project 1 - Contact Form Santraplus</p>
+    </footer>
+</body>
+</html>
