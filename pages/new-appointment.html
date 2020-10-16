@@ -16,58 +16,32 @@
         <article>
             <h2>Demander un Rendez-vous</h2>
             <form action="" method="POST">
-                <p>
-                    <input id="sick" name="reason-appoint" value="sick" type="radio">
-                    <label for="sick">Reprise après une absence pour cause de maladie professionnelle</label>
-                    <div>
-                        <br><br>
-                        <label for="back-date">Date de la reprise : </label>
-                        <input class="input-1" id="back-date" name="back-date" type="date">
-                        <br>
-                        <label for="stop-duration">Durée de l'arrêt : </label>
-                        <input class="input-1 input-date" id="stop-duration" name="stop-duration" type="number">
-                        <label for="stop-duration">jours</label>
-                    </div>
-                </p>
-                <p>
-                    <input id="maternity" name="reason-appoint" value="maternity" type="radio">
-                    <label for="maternity">Reprise après un congé maternité</label>
-                    <div>
-                        <br><br>
-                        <label for="back-date">Date de la reprise : </label>
-                        <input class="input-1" id="back-date" name="back-date" type="date">
-                        <br>
-                        <label for="stop-duration">Durée de l'arrêt : </label>
-                        <input class="input-1 input-date" id="stop-duration" name="stop-duration" type="number">
-                        <label for="stop-duration">jours</label>
-                    </div>
-                </p>
-                <p>
-                    <input id="absence" name="reason-appoint" value="absence" type="radio">
-                    <label for="absence">Reprise après une absence de + 30 jours</label>
-                    <div>
-                        <br><br>
-                        <input id="accident" name="reason-sick" value="accident" type="radio">
-                        <label for="accident">Accident de travail</label>
-                        <input id="stop" name="reason-sick" value="stop" type="radio">
-                        <label for="stop">Arrêt maladie</label>
-                        <br><br>
-                        <label for="back-date">Date de la reprise : </label>
-                        <input class="input-1" id="back-date" name="back-date" type="date">
-                        <br>
-                        <label for="stop-duration">Durée de l'arrêt : </label>
-                        <input class="input-1 input-date" id="stop-duration" name="stop-duration" type="number">
-                        <label for="stop-duration">jours</label>
-                    </div>
-                </p>
-                <p>
-                    <input id="employer" name="reason-appoint" value="employer" type="radio">
-                    <label for="employer">Examen à la demande de l'employeur</label>
-                </p>
+                <div class="container-2blocks">
+                    <p>
+                        <input class="input-1" id="pro-sick" name="reason-appoint" value="pro-sick" type="radio">
+                        <label for="pro-sick">Reprise après une absence pour cause de maladie professionnelle</label><br>
+                        <input class="input-1" id="absence-sick" name="reason-appoint" value="absence-sick" type="radio">
+                        <label for="absence-sick">Reprise après une absence de + 30 jours suite à un arrêt maladie</label><br>
+                        <input class="input-1" id="absence-accident" name="reason-appoint" value="absence-accident" type="radio">
+                        <label for="absence-accident">Reprise après une absence de + 30 jours suite à un accident de travail</label><br>
+                        <input class="input-1" id="maternity" name="reason-appoint" value="maternity" type="radio">
+                        <label for="maternity">Reprise après un congé maternité</label><br><br>
+                        <label class="date" for="date">Date de la reprise : </label>
+                        <input class="input-1 date" id="date" name="date" type="text"><br>
+                        <label class="date" for="duration">Durée de l'arrêt : </label>
+                        <input class="input-1 duration" id="duration" name="duration" type="text">
+                    </p>
+                    <p>
+                        <input class="input-1" id="employer" name="reason-appoint" value="employer" type="radio">
+                        <label for="employer">Examen à la demande de l'employeur</label><br>
+                        <label class="motif" for="motif">Motif : </label>
+                        <input class="input-1 motif" id="motif" name="motif" type="text">
+                    </p>
+                </div>
             </form>
-            <ul>
+            <u class="navigation">
                 <li><a class="orange-button left-button" href="administration.html">Annuler</a></li>
-                <li><a class="green-button left-button" href="register-employee-3.html">Suivant</a></li>
+                <li><a class="green-button left-button" href="confirmation.html">Suivant</a></li>
             </ul>
         </article>
     </main>

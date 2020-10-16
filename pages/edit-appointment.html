@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr" id="edit-appointment-page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santraplus - Modifier Rendez-vous</title>
+    <link href="../css/style.css"" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+</head>
+<body>
+    <header>
+        <a href="../index.html"><img src="../img/logo-santraplus.png" alt="Logo de Santraplus" width="278" height="55"></a>
+        <h1>Portail Administratif</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Modifier un Rendez-vous</h2>
+            <form action="" method="POST">
+                <div class="container-2blocks">
+                    <p>
+                        <input class="input-1" id="pro-sick" name="reason-appoint" value="pro-sick" type="radio">
+                        <label for="pro-sick">Reprise après une absence pour cause de maladie professionnelle</label><br>
+                        <input class="input-1" id="absence-sick" name="reason-appoint" value="absence-sick" type="radio">
+                        <label for="absence-sick">Reprise après une absence de + 30 jours suite à un arrêt maladie</label><br>
+                        <input class="input-1" id="absence-accident" name="reason-appoint" value="absence-accident" type="radio">
+                        <label for="absence-accident">Reprise après une absence de + 30 jours suite à un accident de travail</label><br>
+                        <input class="input-1" id="maternity" name="reason-appoint" value="maternity" type="radio">
+                        <label for="maternity">Reprise après un congé maternité</label><br><br>
+                        <label class="date" for="date">Date de la reprise : </label>
+                        <input class="input-1 date" id="date" name="date" type="text"><br>
+                        <label class="date" for="duration">Durée de l'arrêt : </label>
+                        <input class="input-1 duration" id="duration" name="duration" type="text">
+                    </p>
+                    <p>
+                        <input class="input-1" id="employer" name="reason-appoint" value="employer" type="radio">
+                        <label for="employer">Examen à la demande de l'employeur</label><br>
+                        <label class="motif" for="motif">Motif : </label>
+                        <input class="input-1 motif" id="motif" name="motif" type="text">
+                    </p>
+                </div>
+            </form>
+            <ul class="navigation">
+                <li><a class="orange-button left-button" href="administration.html">Annuler</a></li>
+                <li><a class="green-button left-button" href="confirmation.html">Suivant</a></li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <p>Site conçu et réalisé par Tom Delaunay<br>Project 1 - Contact Form Santraplus</p>
+    </footer>
+</body>
+</html>

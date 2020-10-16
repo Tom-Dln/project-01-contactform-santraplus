@@ -16,39 +16,42 @@
         <article>
             <h2>Enregistrer un Salarié</h2>
             <form action="" method="POST">
-                <p>
-                    <label for="hiring-type">Type de contrat : </label>
-                    <select class="input-1" id="hiring-type" name="hiring-type">
-                        <option value="">-- Merci de choisir --</option>
-                        <option value="cdd">CDD</option>
-                        <option value="cdi">CDI</option>
-                        <option value="learner">Apprenti</option>
-                        <option value="other">Autre</option>
-                    </select><br>
-                    <label for="hiring-date">Date d'embauche : </label>
-                    <input class="input-1" id="hiring-date" name="hiring-date" type="date"><br>
-                    <label for="cdd-date">Date de fin (CDD) : </label>                        
-                    <input class="input-1" id="cdd-date" name="cdd-date" type="date">
-                </p>
-                <p>
-                    <label for="work-post">Poste de travail : </label>
-                    <input class="input-1" id="work-post" name="work-post" type="text"><br>
-                    <label for="pcs-code">Code PCS : </label>                        
-                    <input class="input-1" id="pcs-code" name="pcs-code" type="text"><br>
-                </p>
-                <div id="clearfix"></div>
-                <p>
-                    Le salarié a occupé un emploi identique présentant les mêmes risques d'exposition pour votre entreprise ou pour une autre entreprise :
-                </p>
-                <p>
-                    <input id="same-job-yes" name="same-job" value="yes" type="radio">
-                    <label for="same-job-yes">Oui </label>
-                    <input id="same-job-no" name="same-job" value="no" type="radio">
-                    <label for="same-job-no">Non </label>
-                </p>
+                <div class="container-2blocks">
+                    <p>
+                        <label for="hiring-type">Type de contrat : </label>
+                        <select class="input-1" id="hiring-type" name="hiring-type">
+                            <option value="">-- Merci de choisir --</option>
+                            <option value="cdd">CDD</option>
+                            <option value="cdi">CDI</option>
+                            <option value="learner">Apprenti</option>
+                            <option value="other">Autre</option>
+                        </select><br>
+                        <label for="hiring-date">Date d'embauche : </label>
+                        <input class="input-1" id="hiring-date" name="hiring-date" type="date"><br>
+                        <label for="cdd-date">Date de fin (CDD) : </label>                        
+                        <input class="input-1" id="cdd-date" name="cdd-date" type="date">
+                    </p>
+                    <p>
+                        <label for="work-post">Poste de travail : </label>
+                        <input class="input-1" id="work-post" name="work-post" type="text"><br>
+                        <label for="pcs-code">Code PCS : </label>                        
+                        <input class="input-1" id="pcs-code" name="pcs-code" type="text"><br>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Le salarié a occupé un emploi identique présentant les mêmes risques d'exposition pour votre entreprise ou pour une autre entreprise :
+                    </p>
+                    <p>
+                        <input id="same-job-yes" name="same-job" value="yes" type="radio">
+                        <label for="same-job-yes">Oui </label>
+                        <input id="same-job-no" name="same-job" value="no" type="radio">
+                        <label for="same-job-no">Non </label>
+                    </p>
+                </div>
             </form>
-            <ul>
-                <li><a class="orange-button left-button" href="administration.html">Annuler</a></li>
+            <ul class="navigation">
+                <li><a class="orange-button left-button" href="register-employee-1.html">Précédent</a></li>
                 <li><a class="green-button left-button" href="register-employee-3.html">Suivant</a></li>
             </ul>
         </article>

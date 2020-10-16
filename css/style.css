@@ -71,6 +71,12 @@ h2 {
     margin-bottom: 30px;
 }
 
+h3 {
+    font-size: 2.2rem;
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+
 p {
     font-size: 1.8rem;
 }
@@ -174,21 +180,30 @@ footer p {
     REGISTER-EMPLOYEE-PAGES @@@R-E-P
 -------------------------------------------------------------- */
 
+.input-2 {
+    margin-bottom: 10px;
+}
+
 .input-1 {
     color: #0092B6;
     font-weight: bolder;
     text-align: center;
     border: 2px solid transparent;
+    border: 1px solid transparent;
     border-bottom: 2px solid #0092B6;
     font-size: inherit;
+    margin-bottom: 10px;
 }
 
 .input-1:hover {
     border-bottom: 2px solid #00ABC6;
 }
 
-.input-1:focus-visible {
-    border: 2px solid #transparent;
+.input-1:focus {
+    outline: none;
+    border: 1px solid #00ABC6;
+    border-bottom: 2px solid #00ABC6;
+    border-radius: 5px;
 }
 
 .input-date {
@@ -196,53 +211,74 @@ footer p {
 }
 
 
-#register-employee-1-page form p + p,
-#register-employee-2-page form p:first-child,
-#register-employee-2-page form p:nth-child(2) {
-    float: left;
-    width: 50%;
-}
-
-#register-employee-1-page ul,
-#register-employee-2-page ul,
-#new-appointment-page ul {
-    margin: 0 460px;
-}
-
-#register-employee-1-page ul li,
-#register-employee-2-page ul li,
-#new-appointment-page ul li {
-    display: inline-block;
-}
-
 
 #register-employee-2-page #same-job-yes,
 #register-employee-2-page #same-job-no {
     margin-left: 30px;
 }
 
+.container-2blocks p {
+    float: left;
+    width: 50%;
+}
+
+.navigation {
+    margin-left: 450px;
+}
+
+.navigation li {
+
+    display: inline-block;
+}
+
+
+
+
 /* --------------------------------------------------------------
     NEW-APPOINTMENT-PAGE @@@N-A-P
 -------------------------------------------------------------- */
 
-#new-appointment-page div {
+#new-appointment-page p .date,
+#new-appointment-page p .duration,
+#new-appointment-page p .motif {
     display: none;
-    margin-left: 20px;
 }
 
-#new-appointment-page form input:nth-child(1):checked + div {
-    display: block;
-    margin-left: 20px;
+#new-appointment-page p input:checked ~ label,
+#new-appointment-page p input:checked ~ input {
+    display: inline-block;
+}
+
+
+#new-appointment-page p #employer:checked ~ label,
+#new-appointment-page p #employer:checked ~ input {
+    display: inline-block;
+}
+
+#new-appointment-page p:nth-child(2) {
+    margin-left: 150px;
+    width: 30%;
+}
+
+
+
+
+.container-2blocks::after {
+content: "";
+display: table;
+clear: both;
 }
 
 
 
 
 
-
-#clearfix {
-    clear: both;
+#confirmation-page article a {
+    width: 230px;
 }
+
+
+
 
 
 /* --------------------------------------------------------------

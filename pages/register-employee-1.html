@@ -16,28 +16,32 @@
         <article>
             <h2>Enregistrer un Salarié</h2>
             <form action="" method="POST">
-                <p>
-                    Civilité : 
-                    <input id="man" name="gender" value="man" type="radio">
-                    <label for="man">Monsieur</label>
-                    <input id="woman" name="gender" value="woman" type="radio">
-                    <label for="woman">Madame</label>
-                </p>
-                <p>
-                    <label for="born-last-name">Nom de naissance : </label>
-                    <input class="input-1" id="born-last-name" name="born-last-name" type="text"><br>
-                    <label for="actual-last-name">Nom marital : </label>                        
-                    <input class="input-1" id="actual-last-name" name="actual-last-name" type="text">
-                </p>
-                <p>
-                    <label for="first-name">Prénom : </label>
-                    <input class="input-1" id="first-name" name="first-name" type="text"><br>
-                    <label for="date-birth">Date de Naissance : </label>                        
-                    <input class="input-1" id="date-birth" name="date-birth" type="date">
-                </p>
+                <div>
+                    <p>
+                        Civilité : 
+                        <input id="man" name="gender" value="man" type="radio">
+                        <label for="man">Monsieur</label>
+                        <input id="woman" name="gender" value="woman" type="radio">
+                        <label for="woman">Madame</label>
+                    </p>
+                </div>
+                <div class="container-2blocks">
+                    <p>
+                        <label for="born-last-name">Nom de naissance : </label>
+                        <input class="input-1" id="born-last-name" name="born-last-name" type="text"><br>
+                        <label for="actual-last-name">Nom marital : </label>                        
+                        <input class="input-1" id="actual-last-name" name="actual-last-name" type="text">
+                    </p>
+                    <p>
+                        <label for="first-name">Prénom : </label>
+                        <input class="input-1" id="first-name" name="first-name" type="text"><br>
+                        <label for="date-birth">Date de Naissance : </label>                        
+                        <input class="input-1" id="date-birth" name="date-birth" type="date">
+                    </p>
+                </div>
             </form>
             <div id="clearfix"></div>
-            <ul>
+            <ul class="navigation">
                 <li><a class="orange-button left-button" href="administration.html">Annuler</a></li>
                 <li><a class="green-button left-button" href="register-employee-2.html">Suivant</a></li>
             </ul>
