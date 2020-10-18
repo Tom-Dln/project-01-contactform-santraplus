@@ -7,7 +7,7 @@
 -------------------------------------------------------------- */
 
 /* --------------------------------------------------------------
-    GLOBAL @@@G
+    Global Déclarations @@@G
 -------------------------------------------------------------- */
 
 html {
@@ -24,9 +24,17 @@ body {
     color: #666;
 }
 
-/* --------------------------------------------------------------
-    HEADER @@@H
--------------------------------------------------------------- */
+div {
+    margin: 2em 0;
+}
+
+div p {
+    margin: 0;
+}
+
+/* -------------------------------
+    Header @@@GH
+------------------------------- */
 
 header {
     padding: 35px 50px 35px 50px;
@@ -37,20 +45,19 @@ header {
 
 header h1 {
     display: inline-block;
-    vertical-align: top;
     margin: 0;
-    width: 76%;
     height: 55px;
     font-family: Georgia, Serif;
     font-size: 5.5rem;
     font-style: italic;
-    text-align: right;
     color: #0092B6;
+    position: absolute;
+    right: 50px;
 }
 
-/* --------------------------------------------------------------
-    MAIN @@@M
--------------------------------------------------------------- */
+/* -------------------------------
+   Contenu Prinpical @@@GC
+------------------------------- */
 
 main {
     margin: 100px 150px;
@@ -58,7 +65,7 @@ main {
 
 article {
 
-    background-color: white;
+    background-color: #FFF;
     box-shadow: 0 0 15px 0 rgba(0,0,0,0.2);
     border-radius: 10px;
     padding: 30px;
@@ -77,9 +84,61 @@ h3 {
     margin-bottom: 0;
 }
 
-p {
+main p {
     font-size: 1.8rem;
 }
+
+nav {
+    margin-top: 20px;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 10px
+}
+
+
+
+/* -------------------------------
+    Footer @@@GF
+------------------------------- */
+
+footer {
+    margin: 0;
+    padding: 50px 0;
+    background-image: url(../img/bg_footer.png);
+    color: #FFF;
+    font-size: 2rem;
+    font-family: arial;
+    text-align: center;
+    background-size: cover;
+    line-height: 4rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer #last-update {
+    font-weight: bolder;
+}
+
+footer a {
+    color: #FFF;
+}
+
+/* -------------------------------
+    Classes @@@G.C
+------------------------------- */
 
 .green-button {
     font-size: 2rem;
@@ -87,7 +146,6 @@ p {
     background-color: #AEC000;
     text-decoration: none;
     border-radius: 5px;
-    display: block;
     padding: 10px;
 }
 
@@ -101,7 +159,6 @@ p {
     background-color: #FFAC4B;
     text-decoration: none;
     border-radius: 5px;
-    display: block;
     padding: 10px;
 }
 
@@ -109,9 +166,14 @@ p {
     background-color: #FFBD6F;
 }
 
+/* --------------- */
+
 .center-button {
-    margin: auto;
     margin-top: 35px;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .left-button {
@@ -120,49 +182,74 @@ p {
     display: inline-block;
 }
 
-/* --------------------------------------------------------------
-    FOOTER @@@F
--------------------------------------------------------------- */
+/* --------------- */
 
-footer p {
-    margin: 0;
-    padding: 30px 0;
-    background-image: url(../img/bg_footer.png);
-    color: #FFF;
-    font-size: 2rem;
-    font-family: arial;
+.input-1 {
+    color: #0092B6;
+    font-weight: bolder;
     text-align: center;
-    background-size: cover;
-    line-height: 4rem;
+    border: 2px solid transparent;
+    border: 1px solid transparent;
+    border-bottom: 2px solid #0092B6;
+    font-size: inherit;
+    margin-bottom: 12px;
 }
 
+.input-1:hover {
+    border-bottom: 2px solid #00ABC6;
+}
+
+.input-1:focus {
+    outline: none;
+    border: 1px solid #00ABC6;
+    border-bottom: 2px solid #00ABC6;
+    border-radius: 5px;
+}
+
+.input-2 {
+    margin-bottom: 10px;
+}
+
+/* --------------- */
+
+.container-2blocks p {
+    float: left;
+    width: 50%;
+}
+
+.container-2blocks::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.navigation {
+    margin-left: 450px;
+}
+
+.navigation li {
+
+    display: inline-block;
+}
+
+
+
 /* --------------------------------------------------------------
-    MAIN-PAGE @@@M-P
+    Main-page @@@M
 -------------------------------------------------------------- */
 
-#main-page {
-    overflow: hidden;
-}
-
-#main-page article a {
-    width: 250px;
-}
+/* Pas de déclarations*/
 
 /* --------------------------------------------------------------
-    LOGIN-PAGE @@@L-P
+    Login-page @@@L
 -------------------------------------------------------------- */
 
-#login-page p {
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-}
-
-#login-page input {
-    height: 20px;
+#login-page main .input-1 {
+    width: 160px;
 }
 
 /* --------------------------------------------------------------
-    ADMINISTRATION-PAGE @@@A-P
+    Administration-page @@@A
 -------------------------------------------------------------- */
 
 #administration-page li,
@@ -177,62 +264,16 @@ footer p {
 }
 
 /* --------------------------------------------------------------
-    REGISTER-EMPLOYEE-PAGES @@@R-E-P
+    REGISTER-EMPLOYEE-PAGES @@@R
 -------------------------------------------------------------- */
-
-.input-2 {
-    margin-bottom: 10px;
-}
-
-.input-1 {
-    color: #0092B6;
-    font-weight: bolder;
-    text-align: center;
-    border: 2px solid transparent;
-    border: 1px solid transparent;
-    border-bottom: 2px solid #0092B6;
-    font-size: inherit;
-    margin-bottom: 10px;
-}
-
-.input-1:hover {
-    border-bottom: 2px solid #00ABC6;
-}
-
-.input-1:focus {
-    outline: none;
-    border: 1px solid #00ABC6;
-    border-bottom: 2px solid #00ABC6;
-    border-radius: 5px;
-}
-
-
-
 
 #register-employee-2-page #same-job-yes,
 #register-employee-2-page #same-job-no {
     margin-left: 30px;
 }
 
-.container-2blocks p {
-    float: left;
-    width: 50%;
-}
-
-.navigation {
-    margin-left: 450px;
-}
-
-.navigation li {
-
-    display: inline-block;
-}
-
-
-
-
 /* --------------------------------------------------------------
-    NEW-APPOINTMENT-PAGE @@@N-A-P
+    APPOINTMENT-PAGES @@@N-A-P
 -------------------------------------------------------------- */
 
 #new-appointment-page p .recovery,
@@ -245,7 +286,6 @@ footer p {
     display: inline-block;
 }
 
-
 #new-appointment-page p #employer:checked ~ label,
 #new-appointment-page p #employer:checked ~ input {
     display: inline-block;
@@ -256,10 +296,11 @@ footer p {
     width: 30%;
 }
 
+/* --------------- */
+
 #edit-appointment-page p .availability,
 #edit-appointment-page p .cancel {
     display: none;
-
 }
 
 #edit-appointment-page p input#appointement-postpone:checked ~ label.availability,
@@ -269,70 +310,7 @@ footer p {
     display: inline-block;
 }
 
-
-
-.container-2blocks::after {
-content: "";
-display: table;
-clear: both;
+#edit-appointment-page input#availability,
+#edit-appointment-page input#cancel {
+    margin-top: 10px;
 }
-
-
-
-
-
-#confirmation-page article a {
-    width: 230px;
-}
-
-
-
-
-
-/* --------------------------------------------------------------
-    TESTS @@@T
--------------------------------------------------------------- */
-
-/*
-
-label,
-p {
-    font-size: 3rem;
-    font-family: Arial;
-}
-
-form p span {
-    display: none;
-}
-
-form input:nth-child(1):checked ~ span {
-    display: contents ;
-}
-
-form input:nth-child(1):checked + label{
-    color: coral;
-}
-
-
-
-
-                <p>Présentation de la page</p>
-                <form method="POST" action="">
-                    <p>
-                        <input type="radio" id="mat" name="reprise" value="mat">
-                        <label for="mat">Reprise Maternité</label>
-                        <span><br>Mon texte supplémentaire avec les infos à remplir</span>
-                    </p>
-                    <p>
-                        <input type="radio" id="mal" name="reprise" value="mal">
-                        <label for="mal">Reprise Maladie</label>
-                        <span><br>Mon texte supplémentaire avec les infos à remplir</span>
-                    </p>
-                    <p>
-                        <input type="radio" id="abs" name="reprise" value="abs">
-                        <label for="abs">Reprise Absence</label>
-                        <span><br>Mon texte supplémentaire avec les infos à remplir</span>
-                    </p>
-
-                </form>
-                

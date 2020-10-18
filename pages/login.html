@@ -8,28 +8,30 @@
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
 </head>
 <body>
+    <!-- Header du Portail -->
     <header>
-        <a href="../index.html"><img src="../img/logo-santraplus.png" alt="Logo de Santraplus" width="278" height="55"></a>
+        <a href="../index.html"><img src="../img/logo-santraplus.png" alt="Logo de Santraplus" width="278px" height="55px"></a>
         <h1>Portail Administratif</h1>
     </header>
+    <!-- Contenu Prinpical du Portail -->
     <main>
         <article>
             <h2>Connexion</h2>
             <form action="" method="POST">
                 <p>
-                    <label form="ad-num">Numéro d'Adhérent :</label><br>
-                    <input id="ad-num" name="ad-num" type="">
-                </p>
-                <p>
-                    <label form="password">Mot de passe :</label><br>
-                    <input id="password" name="password" type="password">
+                    <label for="ad-num">Numéro d'Adhérent :</label><br>
+                    <input class="input-1" id="ad-num" name="ad-num" type="text"><br>
+                    <label for="password">Mot de passe :</label><br>
+                    <input class="input-1" id="password" name="password" type="password">
                 </p>
             </form>
             <a class="green-button left-button" href="administration.html">Valider</a>
         </article>
     </main>
+    <!-- Footer du Portail -->
     <footer>
-        <p>Site conçu et réalisé par Tom Delaunay<br>Project 1 - Contact Form Santraplus</p>
+        <p>Version Beta Fermée - Dernière modification : <span id="last-update">18/10/2020</span></p>
+        <p>Site conçu et réalisé par <a href="https://github.com/Tom-Dln" target="_blank" title="Lien vers le Github">Tom Delaunay</a></p>
     </footer>
 </body>
 </html>

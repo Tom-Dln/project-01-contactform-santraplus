@@ -8,10 +8,12 @@
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
 </head>
 <body>
+    <!-- Header du Portail -->
     <header>
-        <a href="../index.html"><img src="../img/logo-santraplus.png" alt="Logo de Santraplus" width="278" height="55"></a>
+        <a href="../index.html"><img src="../img/logo-santraplus.png" alt="Logo de Santraplus" width="278px" height="55px"></a>
         <h1>Portail Administratif</h1>
     </header>
+    <!-- Contenu Prinpical du Portail -->
     <main>
         <article>
             <h2>Enregistrer un Salarié</h2>
@@ -38,26 +40,28 @@
                         <input class="input-1" id="pcs-code" name="pcs-code" type="text"><br>
                     </p>
                 </div>
-                <div>
-                    <p>
-                        Le salarié a occupé un emploi identique présentant les mêmes risques d'exposition pour votre entreprise ou pour une autre entreprise :
-                    </p>
-                    <p>
-                        <input id="same-job-yes" name="same-job" value="yes" type="radio">
-                        <label for="same-job-yes">Oui </label>
-                        <input id="same-job-no" name="same-job" value="no" type="radio">
-                        <label for="same-job-no">Non </label>
-                    </p>
-                </div>
+                <p>
+                    Le salarié a occupé un emploi identique présentant les mêmes risques d'exposition pour votre entreprise ou pour une autre entreprise :
+                </p>
+                <p>
+                    <input id="same-job-yes" name="same-job" value="yes" type="radio">
+                    <label for="same-job-yes">Oui </label>
+                    <input id="same-job-no" name="same-job" value="no" type="radio">
+                    <label for="same-job-no">Non </label>
+                </p>
             </form>
-            <ul class="navigation">
-                <li><a class="orange-button left-button" href="register-employee-1.html">Précédent</a></li>
-                <li><a class="green-button left-button" href="register-employee-3.html">Suivant</a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a class="orange-button" href="register-employee-1.html">Précédent</a></li>
+                    <li><a class="green-button" href="register-employee-3.html">Suivant</a></li>
+                </ul>
+            </nav>
         </article>
     </main>
+    <!-- Footer du Portail -->
     <footer>
-        <p>Site conçu et réalisé par Tom Delaunay<br>Project 1 - Contact Form Santraplus</p>
+        <p>Version Beta Fermée - Dernière modification : <span id="last-update">18/10/2020</span></p>
+        <p>Site conçu et réalisé par <a href="https://github.com/Tom-Dln" target="_blank" title="Lien vers le Github">Tom Delaunay</a></p>
     </footer>
 </body>
 </html>

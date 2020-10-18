@@ -8,33 +8,32 @@
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
 </head>
 <body>
+    <!-- Header du Portail -->
     <header>
-        <a href="../index.html"><img src="../img/logo-santraplus.png" alt="Logo de Santraplus" width="278" height="55"></a>
+        <a href="../index.html"><img src="../img/logo-santraplus.png" alt="Logo de Santraplus" width="278px" height="55px"></a>
         <h1>Portail Administratif</h1>
     </header>
+    <!-- Contenu Prinpical du Portail -->
     <main>
         <article>
             <h2>Modifier un Rendez-vous</h2>
             <form action="" method="POST">
-                <div>
-                    <p>
-                        <label for="employee">Veuillez choisir le salarié : </label>
-                        <select class="input-1" id="employee" name="employee">
-                            <option value="">--- Veuillez choisir ---</option>
-                            <option value="bpz">Bousquet (Picard) Zoé</option>
-                            <option value="dge">Dodier (Gagnon) Émilie</option>
-                            <option value="ddc">Doyon (Doyon) Claude</option>    
-                            <option value="lbr">Laisné (Barré) Rachelle</option>   
-                            <option value="llj">Lauzier (Labois) Jeanne</option>
-                            <option value="laa">Levasseur (Aubé) Audrey</option>
-                            <option value="mdo">Maheu (Dufour) Olivier</option>
-                            <option value="mge">Millard (Givry) Édouard</option>
-                            <option value="phy">Perillard (Hue) Yolande</option>
-                            <option value="vba">Veilleux (Borde) Arthur</option>
-                        </select>
-                    </p>
-                </div>
-
+                <p>
+                    <label for="employee">Veuillez choisir le salarié : </label>
+                    <select class="input-1" id="employee" name="employee">
+                        <option value="">--- Veuillez choisir ---</option>
+                        <option value="bpz">Bousquet (Picard) Zoé</option>
+                        <option value="dge">Dodier (Gagnon) Émilie</option>
+                        <option value="ddc">Doyon (Doyon) Claude</option>    
+                        <option value="lbr">Laisné (Barré) Rachelle</option>   
+                        <option value="llj">Lauzier (Labois) Jeanne</option>
+                        <option value="laa">Levasseur (Aubé) Audrey</option>
+                        <option value="mdo">Maheu (Dufour) Olivier</option>
+                        <option value="mge">Millard (Givry) Édouard</option>
+                        <option value="phy">Perillard (Hue) Yolande</option>
+                        <option value="vba">Veilleux (Borde) Arthur</option>
+                    </select>
+                </p>
                 <div class="container-2blocks">
                     <p>
                         <label for="appointement-date">Date du rendez-vous : </label>
@@ -55,25 +54,29 @@
                         </select>
                     </p>
                     <p>
-                        <input class="input-1" id="appointement-postpone" name="appointement-edit" value="appointement-postpone" type="radio">
+                        <input id="appointement-postpone" name="appointement-edit" value="appointement-postpone" type="radio">
                         <label for="appointement-postpone">Reporter le rendez-vous</label><br>
                         <label class="availability" for="availability">Disponibilités : </label>
                         <input class="input-1 availability" id="availability" name="availability" type="text"><br>
-                        <input class="input-1" id="appointement-cancel" name="appointement-edit" value="appointement-cancel" type="radio">
+                        <input id="appointement-cancel" name="appointement-edit" value="appointement-cancel" type="radio">
                         <label for="appointement-cancel">Annuler le rendez-vous</label><br>
                         <label class="cancel" for="cancel">Raison : </label>
                         <input class="input-1 cancel" id="cancel" name="cancel" type="text">
                     </p>
                 </div>
             </form>
-            <ul class="navigation">
-                <li><a class="orange-button left-button" href="administration.html">Annuler</a></li>
-                <li><a class="green-button left-button" href="confirmation.html">Suivant</a></li>
-            </ul>
+            <nav>
+                <ul>
+                    <li><a class="orange-button" href="administration.html">Annuler</a></li>
+                    <li><a class="green-button" href="confirmation.html">Finaliser</a></li>
+                </ul>
+            </nav>
         </article>
     </main>
+    <!-- Footer du Portail -->
     <footer>
-        <p>Site conçu et réalisé par Tom Delaunay<br>Project 1 - Contact Form Santraplus</p>
+        <p>Version Beta Fermée - Dernière modification : <span id="last-update">18/10/2020</span></p>
+        <p>Site conçu et réalisé par <a href="https://github.com/Tom-Dln" target="_blank" title="Lien vers le Github">Tom Delaunay</a></p>
     </footer>
 </body>
 </html>
