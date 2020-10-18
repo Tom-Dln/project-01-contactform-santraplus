@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santraplus - Nouveau Rendez-vous</title>
-    <link href="../css/style.css"" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
 </head>
 <body>
@@ -16,6 +16,24 @@
         <article>
             <h2>Demander un Rendez-vous</h2>
             <form action="" method="POST">
+                <div>
+                    <p>
+                        <label for="employee">Veuillez choisir le salarié : </label>
+                        <select class="input-1" id="employee" name="employee">
+                            <option value="">--- Veuillez choisir ---</option>
+                            <option value="">Bousquet (Picard) Zoé</option>
+                            <option value="">Dodier (Gagnon) Émilie</option>
+                            <option value="">Doyon (Doyon) Claude</option>    
+                            <option value="">Laisné (Barré) Rachelle</option>   
+                            <option value="">Lauzier (Labois) Jeanne</option>
+                            <option value="">Levasseur (Aubé) Audrey</option>
+                            <option value="">Maheu (Dufour) Olivier</option>
+                            <option value="">Millard (Givry) Édouard</option>
+                            <option value="">Perillard (Hue) Yolande</option>
+                            <option value="">Veilleux (Borde) Arthur</option>
+                        </select>
+                    </p>
+                </div>
                 <div class="container-2blocks">
                     <p>
                         <input class="input-1" id="pro-sick" name="reason-appoint" value="pro-sick" type="radio">
@@ -26,10 +44,10 @@
                         <label for="absence-accident">Reprise après une absence de + 30 jours suite à un accident de travail</label><br>
                         <input class="input-1" id="maternity" name="reason-appoint" value="maternity" type="radio">
                         <label for="maternity">Reprise après un congé maternité</label><br><br>
-                        <label class="date" for="date">Date de la reprise : </label>
-                        <input class="input-1 date" id="date" name="date" type="text"><br>
-                        <label class="date" for="duration">Durée de l'arrêt : </label>
-                        <input class="input-1 duration" id="duration" name="duration" type="text">
+                        <label class="recovery" for="recovery-date">Date de la reprise : </label>
+                        <input class="input-1 recovery" id="recovery-date" name="recovery-date" type="date"><br>
+                        <label class="recovery" for="recovery-duration">Durée de l'arrêt : </label>
+                        <input class="input-1 recovery" id="recovery-duration" name="recovery-duration" type="text">
                     </p>
                     <p>
                         <input class="input-1" id="employer" name="reason-appoint" value="employer" type="radio">

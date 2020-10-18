@@ -206,9 +206,6 @@ footer p {
     border-radius: 5px;
 }
 
-.input-date {
-    width: 50px;
-}
 
 
 
@@ -238,8 +235,7 @@ footer p {
     NEW-APPOINTMENT-PAGE @@@N-A-P
 -------------------------------------------------------------- */
 
-#new-appointment-page p .date,
-#new-appointment-page p .duration,
+#new-appointment-page p .recovery,
 #new-appointment-page p .motif {
     display: none;
 }
@@ -260,6 +256,18 @@ footer p {
     width: 30%;
 }
 
+#edit-appointment-page p .availability,
+#edit-appointment-page p .cancel {
+    display: none;
+
+}
+
+#edit-appointment-page p input#appointement-postpone:checked ~ label.availability,
+#edit-appointment-page p input#appointement-postpone:checked ~ input.availability,
+#edit-appointment-page p input#appointement-cancel:checked ~ label.cancel,
+#edit-appointment-page p input#appointement-cancel:checked ~ input.cancel {
+    display: inline-block;
+}
 
 
 

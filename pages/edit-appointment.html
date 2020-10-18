@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santraplus - Modifier Rendez-vous</title>
-    <link href="../css/style.css"" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
 </head>
 <body>
@@ -16,26 +16,53 @@
         <article>
             <h2>Modifier un Rendez-vous</h2>
             <form action="" method="POST">
+                <div>
+                    <p>
+                        <label for="employee">Veuillez choisir le salarié : </label>
+                        <select class="input-1" id="employee" name="employee">
+                            <option value="">--- Veuillez choisir ---</option>
+                            <option value="bpz">Bousquet (Picard) Zoé</option>
+                            <option value="dge">Dodier (Gagnon) Émilie</option>
+                            <option value="ddc">Doyon (Doyon) Claude</option>    
+                            <option value="lbr">Laisné (Barré) Rachelle</option>   
+                            <option value="llj">Lauzier (Labois) Jeanne</option>
+                            <option value="laa">Levasseur (Aubé) Audrey</option>
+                            <option value="mdo">Maheu (Dufour) Olivier</option>
+                            <option value="mge">Millard (Givry) Édouard</option>
+                            <option value="phy">Perillard (Hue) Yolande</option>
+                            <option value="vba">Veilleux (Borde) Arthur</option>
+                        </select>
+                    </p>
+                </div>
+
                 <div class="container-2blocks">
                     <p>
-                        <input class="input-1" id="pro-sick" name="reason-appoint" value="pro-sick" type="radio">
-                        <label for="pro-sick">Reprise après une absence pour cause de maladie professionnelle</label><br>
-                        <input class="input-1" id="absence-sick" name="reason-appoint" value="absence-sick" type="radio">
-                        <label for="absence-sick">Reprise après une absence de + 30 jours suite à un arrêt maladie</label><br>
-                        <input class="input-1" id="absence-accident" name="reason-appoint" value="absence-accident" type="radio">
-                        <label for="absence-accident">Reprise après une absence de + 30 jours suite à un accident de travail</label><br>
-                        <input class="input-1" id="maternity" name="reason-appoint" value="maternity" type="radio">
-                        <label for="maternity">Reprise après un congé maternité</label><br><br>
-                        <label class="date" for="date">Date de la reprise : </label>
-                        <input class="input-1 date" id="date" name="date" type="text"><br>
-                        <label class="date" for="duration">Durée de l'arrêt : </label>
-                        <input class="input-1 duration" id="duration" name="duration" type="text">
+                        <label for="appointement-date">Date du rendez-vous : </label>
+                        <select class="input-1" id="appointement-date" name="appointement-date">
+                            <option value="">--- Veuillez choisir ---</option>
+                            <option value="">Mercredi 28 Octobre 2020</option>
+                        </select><br>
+                        <label for="appointement-hour">Heure du rendez-vous : </label>
+                        <select class="input-1" id="appointement-hour" name="appointement-hour">
+                            <option value="">--- Veuillez choisir ---</option>
+                            <option value="">14h30</option>
+                        </select><br>
+                        <label for="doctor">Médecin ou infirmière : </label>
+                        <select class="input-1" id="doctor" name="doctor">
+                            <option value="">--- Veuillez choisir ---</option>
+                            <option value="d-mb">Marie Bouvet</option>
+                            <option value="d-">Nathalie Laderoute</option>
+                        </select>
                     </p>
                     <p>
-                        <input class="input-1" id="employer" name="reason-appoint" value="employer" type="radio">
-                        <label for="employer">Examen à la demande de l'employeur</label><br>
-                        <label class="motif" for="motif">Motif : </label>
-                        <input class="input-1 motif" id="motif" name="motif" type="text">
+                        <input class="input-1" id="appointement-postpone" name="appointement-edit" value="appointement-postpone" type="radio">
+                        <label for="appointement-postpone">Reporter le rendez-vous</label><br>
+                        <label class="availability" for="availability">Disponibilités : </label>
+                        <input class="input-1 availability" id="availability" name="availability" type="text"><br>
+                        <input class="input-1" id="appointement-cancel" name="appointement-edit" value="appointement-cancel" type="radio">
+                        <label for="appointement-cancel">Annuler le rendez-vous</label><br>
+                        <label class="cancel" for="cancel">Raison : </label>
+                        <input class="input-1 cancel" id="cancel" name="cancel" type="text">
                     </p>
                 </div>
             </form>
