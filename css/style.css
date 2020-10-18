@@ -6,6 +6,22 @@
 
 -------------------------------------------------------------- */
 
+/* -------------------------------
+    Interdiction Ecran
+------------------------------- */
+
+@media screen and (max-width: 1110px) {
+    body {
+        display: none;
+    }
+    html {
+        background-color: #23272A;
+        background-image: url(../img/resolution-problem.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
 /* --------------------------------------------------------------
     Global Déclarations @@@G
 -------------------------------------------------------------- */
@@ -29,6 +45,7 @@ div {
 }
 
 div p {
+    padding-right: 10px;
     margin: 0;
 }
 
@@ -60,7 +77,8 @@ header h1 {
 ------------------------------- */
 
 main {
-    margin: 100px 150px;
+    width: 1080px;
+    margin: 100px auto;
 }
 
 article {
@@ -214,7 +232,7 @@ footer a {
 
 .container-2blocks p {
     float: left;
-    width: 50%;
+    width: 49%;
 }
 
 .container-2blocks::after {
